@@ -18,7 +18,7 @@ function DonutChart() {
     axios.get(`${BASE_URL}/sales/salessum`)
             .then((response)=> {
                 const data = response.data as SaleSum[];
-                const myLabels = data.map(x => x.sellerName);
+                const myLabels = data.map(x => x.sellerName)as string[];
                 const mySeries = data.map(x => x.sum);
 
                 chartData = { labels: myLabels, series: mySeries};
