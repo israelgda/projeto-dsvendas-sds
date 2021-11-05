@@ -1,8 +1,14 @@
+import Footer from "components/Footer";
+import NavBar from "components/NavBar";
 import Routes from "Routes";
 
 function App() {
   return (
-    <Routes />
+    <>
+    <NavBar />
+      <Routes />
+    <Footer />
+    </>
   );
 }
 

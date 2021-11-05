@@ -1,13 +1,10 @@
 import BarChart from "components/BarChart";
 import DataTable from "components/DataTable";
 import DonutChart from "components/DonutChart";
-import Footer from "components/Footer";
-import NavBar from "components/NavBar";
 
 function Dashboard() {
     return (
         <>
-            <NavBar />
             <div className="container">
                 <h1 className="text-primary">Dashboard de Vendas</h1>
 
@@ -27,7 +24,6 @@ function Dashboard() {
                 </div>
                 <DataTable />
             </div>
-            <Footer />
         </>
     );
 }
